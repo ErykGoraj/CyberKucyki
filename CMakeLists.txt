@@ -22,7 +22,8 @@ FetchContent_Declare(
 
 # Jeśli potrzeba pobiera SFML i dodaje do projektu
 FetchContent_MakeAvailable(SFML)
-add_executable(gra main.cpp) # 1 cel budowania 2 i reszta plikow dajaca zbudowanie
+add_executable(gra main.cpp
+    process/17_10_2026_PLANSZA_0.png) # 1 cel budowania 2 i reszta plikow dajaca zbudowanie
 
 target_compile_features(gra PRIVATE cxx_std_17) # Wymagamy conajmniej c++17
 
