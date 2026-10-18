@@ -23,7 +23,8 @@ FetchContent_Declare(
 # Jeśli potrzeba pobiera SFML i dodaje do projektu
 FetchContent_MakeAvailable(SFML)
 add_executable(gra main.cpp
-    process/17_10_2026_PLANSZA_0.png) # 1 cel budowania 2 i reszta plikow dajaca zbudowanie
+    process/17_10_2026_PLANSZA_0.png
+resources/buttons/authors.png resources/buttons/authors_onmouse.png resources/buttons/authors_pressed.png resources/buttons/play.png resources/buttons/play_onmouse.png resources/buttons/play_pressed.png resources/buttons/settings.png resources/buttons/settings_onmouse.png resources/buttons/settings_pressed.png) # 1 cel budowania 2 i reszta plikow dajaca zbudowanie
 
 target_compile_features(gra PRIVATE cxx_std_17) # Wymagamy conajmniej c++17
 
